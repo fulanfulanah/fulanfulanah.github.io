@@ -32,7 +32,7 @@ body, html {
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    padding: 50px;    
+    padding: 50px; 
   }
   .frame-1 {
     background-color: red;
@@ -206,3 +206,29 @@ button {
   cursor: pointer;
 }
 
+
+.transisi {
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.transisi-bawah {
+  transform: translateY(10px);
+}
+
+.transisi-atas {
+  transform: translateY(-10px);
+}
+
+.transisi-kanan {
+  transform: translateX(10px);
+}
+
+.transisi-kiri {
+  transform: translateX(-10px);
+}
+
+.visible {
+  opacity: 1 !important;
+  transform: translate(0, 0) !important;
+}
