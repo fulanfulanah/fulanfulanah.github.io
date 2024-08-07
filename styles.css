@@ -4,6 +4,7 @@ body, html {
     font-family: 'Autour One', sans-serif;
     overflow: hidden;
   }
+  
   .frame {
     position: relative;
     width: 100%;
@@ -12,7 +13,6 @@ body, html {
     background-position: center;
     color: rgb(15, 15, 15);
     transition: opacity 1s, transform 1s;
-
   }
 
   .framekecil {
@@ -33,7 +33,10 @@ body, html {
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    padding: 30px; 
+    padding-top: 50px;
+    padding-bottom: 80px; 
+    padding-left: 50px;
+    padding-right: 50px;
   }
   .frame-1 {
     background-color: #9adfec;
@@ -233,4 +236,15 @@ button {
 .visible {
   opacity: 1 !important;
   transform: translate(0, 0) !important;
+}
+
+footer {
+  background-color: rgb(27, 27, 27);
+  position: relative;
+  padding: 10px;
+  width: 100%;
+  color: white;
+  font-size: 10px;
+  justify-content: center;
+  text-align: center;
 }
