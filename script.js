@@ -138,3 +138,28 @@ document.getElementById('open-music-btn').addEventListener('click', function() {
       //    localStorage.clear();
       //    alert('Semua item di localStorage telah dihapus.');
       //  }
+
+
+      // EFEK TRANSISI TEKS ATAS BAWAH KANAN KIRI
+      document.addEventListener('DOMContentLoaded', function () {
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5
+        };
+
+        const observerCallback = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                } else {
+                    entry.target.classList.remove('visible');
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+        const elements = document.querySelectorAll('.transisi');
+        elements.forEach(el => observer.observe(el));
+    });
