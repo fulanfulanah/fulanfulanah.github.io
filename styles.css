@@ -27,6 +27,7 @@ body, html {
   }
 
   .frame-cover {
+    background-color: #9adfec;
     background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxkoCAIbQufqes0QEKI8hl_Rq4PpxbS5bktHSnMyZS0zD8vB-wehvx76B7q7FPt2T8RitHczUbjgyadr7-aFgY3SidpfwkdWljfcsLSlAF4ch5FBvDw2wegtOK2H83irWbeR_HW_Kq0ciqN64r_Ikrj0MfOsQp_6dJHOvtxLrzOejKZQ1IYsrdUueDrMY/s1920/1%20copy.jpg');
     display: flex;
     flex-direction: column;
@@ -35,8 +36,8 @@ body, html {
     padding: 50px; 
   }
   .frame-1 {
-    background-color: red;
-    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLdcjUodPjCaHb4GEbiLVYP5NT_-mCJEcIGdX6iBUizdFToH2ejFRcQdkotMNLzRr6nBpsL9CNJ6mTEFGaiEbfBPtp15SHKGODOiKRRlQf9ed-cTK2EflNzL8llwGHcF-6cPcRP8kBaTx_cTksD-T0zujduYdBx_q4kOIcn0M4zW2yiwgOrH-bmGhyphenhyphenLj0/s320/Firefly%2020240729083643%20(1).png');
+    background-color: #9adfec;
+    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9ggpE8KeCFpaJxy5r-M2d8lgbVyU6DvRHEPr_AZGGOIIQd_58-1Y5XSviAf0-EZjTPokyjwj7D2jXfRv2mnQBktrnfVjQj6qJB4n2ebz-Qh84iRgRjJDENOq3NTIySDcc2hcBGOFYGbDdJmgJyvdbJ6EHVCvXr_yp__0k2EAXnlNzrAjTFBngxiwTPs4/s1080/IMG_6695%20copy%202%20kompress.jpg');
     opacity: 90%;
     display: flex;
     flex-direction: column;
@@ -45,7 +46,7 @@ body, html {
     padding: 50px;
   }
   .frame-2 {
-    background-color: #87CEEB;
+    background-color: #9adfec;
     background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiz-DbM-MmCete4d2zS7DLSQ97FoK7sRv8_ZTugLKvN6fdRmH1QUdj_0nj3ULRwPRUuNzY5ld29LQ9GnXNbiZkONfGT3-44hBsGjCp7fxUbUTlMGHzlnx9sjOM_6ZSWoJ_UCqKwYL2FEoEej6dqvS6-jufvsMvqy6Cw67LWjPQ2mvsRvcIGFT-f95j316A/s595/bg%20copy.jpg');
     display: flex;
     justify-content: center;
@@ -60,7 +61,7 @@ body, html {
     font-style: italic;
   }
   .frame-3 {
-    background-color: aquamarine;
+    background-color: #9adfec;
     background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwqXh3RSdaMZyrcZHlXYOqvHNx49nLPKgT9wpzOv-Q_JoCs1ceJCJIKOrn5RXwY7AOKxUyv30bP0H7_expi4G5BjDclFupN4Hgfrtb3faPQtqz-b2ARW8Dqbjc-kehhINQXjlQGuqV_MLs0bSfhzeskkVAJ2Tffvsh09VDa0AWTHl-XPjrrUKfWmmFKco/s595/bg%20copy%202.jpg');
     display: flex;
     color: white;
@@ -79,7 +80,7 @@ body, html {
     height: 150px;
   }
   .frame-4 {
-    background-color: blueviolet;
+    background-color: #9adfec;
     background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiz-DbM-MmCete4d2zS7DLSQ97FoK7sRv8_ZTugLKvN6fdRmH1QUdj_0nj3ULRwPRUuNzY5ld29LQ9GnXNbiZkONfGT3-44hBsGjCp7fxUbUTlMGHzlnx9sjOM_6ZSWoJ_UCqKwYL2FEoEej6dqvS6-jufvsMvqy6Cw67LWjPQ2mvsRvcIGFT-f95j316A/s595/bg%20copy.jpg');
     display: flex;
     flex-direction: column;
@@ -113,7 +114,7 @@ body, html {
   }
 
   .frame-5 {
-    background-color: blue;
+    background-color: #9adfec;
     background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiz-DbM-MmCete4d2zS7DLSQ97FoK7sRv8_ZTugLKvN6fdRmH1QUdj_0nj3ULRwPRUuNzY5ld29LQ9GnXNbiZkONfGT3-44hBsGjCp7fxUbUTlMGHzlnx9sjOM_6ZSWoJ_UCqKwYL2FEoEej6dqvS6-jufvsMvqy6Cw67LWjPQ2mvsRvcIGFT-f95j316A/s595/bg%20copy.jpg');
     padding: 50px;
   }
@@ -131,7 +132,7 @@ body, html {
   }
   
   .frame-6 {
-    background-color: #87CEEB;
+    background-color: #9adfec;
     background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwqXh3RSdaMZyrcZHlXYOqvHNx49nLPKgT9wpzOv-Q_JoCs1ceJCJIKOrn5RXwY7AOKxUyv30bP0H7_expi4G5BjDclFupN4Hgfrtb3faPQtqz-b2ARW8Dqbjc-kehhINQXjlQGuqV_MLs0bSfhzeskkVAJ2Tffvsh09VDa0AWTHl-XPjrrUKfWmmFKco/s595/bg%20copy%202.jpg');
     color: rgb(255, 255, 255);
     padding: 50px;
@@ -147,6 +148,7 @@ body, html {
     border-radius: 10px;
   }
   .frame-7 {
+    background-color: #9adfec;
     background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwqXh3RSdaMZyrcZHlXYOqvHNx49nLPKgT9wpzOv-Q_JoCs1ceJCJIKOrn5RXwY7AOKxUyv30bP0H7_expi4G5BjDclFupN4Hgfrtb3faPQtqz-b2ARW8Dqbjc-kehhINQXjlQGuqV_MLs0bSfhzeskkVAJ2Tffvsh09VDa0AWTHl-XPjrrUKfWmmFKco/s595/bg%20copy%202.jpg');
     display: flex;
     flex-direction: column;
