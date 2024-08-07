@@ -33,7 +33,7 @@ body, html {
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    padding: 50px; 
+    padding: 30px; 
   }
   .frame-1 {
     background-color: #9adfec;
