@@ -1,8 +1,9 @@
 body, html {
     height: 100%;
     margin: 0;
-    font-family: 'Autour One', sans-serif;
+    font-family: 'Amita', sans-serif;
     overflow: hidden;
+    background-color: black;
   }
   
   .frame {
@@ -26,31 +27,154 @@ body, html {
 
   }
 
+  /* INI BAGIAN AWAL FRAME COVER */
+
   .frame-cover {
-    background-color: #9adfec;
-    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxkoCAIbQufqes0QEKI8hl_Rq4PpxbS5bktHSnMyZS0zD8vB-wehvx76B7q7FPt2T8RitHczUbjgyadr7-aFgY3SidpfwkdWljfcsLSlAF4ch5FBvDw2wegtOK2H83irWbeR_HW_Kq0ciqN64r_Ikrj0MfOsQp_6dJHOvtxLrzOejKZQ1IYsrdUueDrMY/s1920/1%20copy.jpg');
+    background-image: url('bg-foto1.jpg');;
+    animation: zoomIn 2s ease-in-out forwards;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center; /* Menempatkan gambar di tengah */
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 80px; 
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 5% 10%; /* Menggunakan persen untuk padding */
+    height: 100vh; /* Pastikan frame memenuhi tinggi viewport */
+}
+
+@keyframes zoomIn {
+  from {
+    background-size: 100vh;
   }
+  to {
+    background-size: 110vh;
+  }
+}
+
+.frame-cover h4,
+.frame-cover h1,
+.frame-cover p {
+    margin: 0.1em 0; /* Mengurangi jarak antar elemen teks */
+    color: rgb(255, 255, 255); /* Warna font yang konsisten */
+}
+
+.frame-cover h4 {
+    font-size: 2em; /* Gunakan em untuk ukuran font relatif */
+}
+
+.frame-cover h1 {
+    font-size: 3em;
+}
+
+.frame-cover p {
+    font-size: 1em;
+}
+
+.frame-cover img {
+    display: block; /* Pastikan gambar ditata dengan benar */
+    margin: 20px auto; /* Memusatkan gambar */
+    max-width: 100%; /* Gambar responsif */
+    height: auto;
+}
+
+.frame-cover .tombolcover {
+    position: fixed;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+@media (max-width: 768px) {
+    .frame-cover {
+        padding: 10% 5%; /* Mengurangi padding pada layar kecil */
+    }
+
+    .frame-cover h4 {
+        font-size: 1.5em; /* Menyesuaikan ukuran font pada layar kecil */
+    }
+
+    .frame-cover h1 {
+        font-size: 2.5em;
+    }
+
+    .frame-cover p {
+        font-size: 1.2em;
+    }
+
+    .frame-cover img {
+        margin: 10px auto; /* Menyesuaikan margin gambar pada layar kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    .frame-cover h4 {
+        font-size: 1.2em; /* Menyesuaikan ukuran font pada layar sangat kecil */
+    }
+
+    .frame-cover h1 {
+        font-size: 2em;
+    }
+
+    .frame-cover p {
+        font-size: 1em;
+    }
+}
+
+/* Gaya tombol */
+.btn-dark {
+  background-color: rgb(32, 32, 32); /* Warna latar belakang tombol */
+  border: none; /* Menghapus border default */
+  color: #fff; /* Warna teks tombol */
+  padding: 5px 20px; /* Padding tombol */
+  font-size: 16px; /* Ukuran font tombol */
+  border-radius: 5px; /* Sudut membulat tombol */
+  cursor: pointer; /* Menampilkan kursor pointer saat hover */
+  transition: background-color 0.3s ease; /* Transisi halus saat hover */
+  margin-bottom: 10px;
+}
+
+.btn-dark:hover {
+  background-color: rgb(185, 156, 87); /* Warna latar belakang saat hover */
+}
+
+  /* INI BAGIAN AKHIR FRAME COVER */
+
+
+  .vector-mempelai{
+    width: 280px;
+    height: 280px;
+  }
+
   .frame-1 {
-    background-color: #9adfec;
-    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9ggpE8KeCFpaJxy5r-M2d8lgbVyU6DvRHEPr_AZGGOIIQd_58-1Y5XSviAf0-EZjTPokyjwj7D2jXfRv2mnQBktrnfVjQj6qJB4n2ebz-Qh84iRgRjJDENOq3NTIySDcc2hcBGOFYGbDdJmgJyvdbJ6EHVCvXr_yp__0k2EAXnlNzrAjTFBngxiwTPs4/s1080/IMG_6695%20copy%202%20kompress.jpg');
-    opacity: 90%;
+    background-image: url('https://media1.giphy.com/media/kA1AkP3cGS90I/200w.gif?cid=6c09b952qx2meu5elrr63ibreo1dq9tk6t7f9fdds8j3fqsy&ep=v1_gifs_search&rid=200w.gif&ct=g');
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     padding: 50px;
   }
+
+  .frame-1-image-container {
+    background-color: #fff;
+    border: 4px solid white;
+    border-radius: 100px 100px 0px 0px;
+    border-color: #fff;
+    overflow: hidden;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.2);
+    width: 220px;
+    height: 350px;
+    margin-bottom: 30px;
+  }
+  .frame-1-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
   .frame-2 {
-    background-color: #9adfec;
-    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiz-DbM-MmCete4d2zS7DLSQ97FoK7sRv8_ZTugLKvN6fdRmH1QUdj_0nj3ULRwPRUuNzY5ld29LQ9GnXNbiZkONfGT3-44hBsGjCp7fxUbUTlMGHzlnx9sjOM_6ZSWoJ_UCqKwYL2FEoEej6dqvS6-jufvsMvqy6Cw67LWjPQ2mvsRvcIGFT-f95j316A/s595/bg%20copy.jpg');
+    background-color: #fff5c9;
+    background-image: url('bg-2.jpg');
+    color: rgb(255, 255, 255);
+    font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,10 +188,10 @@ body, html {
     font-style: italic;
   }
   .frame-3 {
-    background-color: #9adfec;
-    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwqXh3RSdaMZyrcZHlXYOqvHNx49nLPKgT9wpzOv-Q_JoCs1ceJCJIKOrn5RXwY7AOKxUyv30bP0H7_expi4G5BjDclFupN4Hgfrtb3faPQtqz-b2ARW8Dqbjc-kehhINQXjlQGuqV_MLs0bSfhzeskkVAJ2Tffvsh09VDa0AWTHl-XPjrrUKfWmmFKco/s595/bg%20copy%202.jpg');
+    background-color: #000000;
+    background-image: url('bg-3.jpg');
     display: flex;
-    color: white;
+    color: rgb(255, 255, 255);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -83,18 +207,19 @@ body, html {
     height: 150px;
   }
   .frame-4 {
-    background-color: #9adfec;
-    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiz-DbM-MmCete4d2zS7DLSQ97FoK7sRv8_ZTugLKvN6fdRmH1QUdj_0nj3ULRwPRUuNzY5ld29LQ9GnXNbiZkONfGT3-44hBsGjCp7fxUbUTlMGHzlnx9sjOM_6ZSWoJ_UCqKwYL2FEoEej6dqvS6-jufvsMvqy6Cw67LWjPQ2mvsRvcIGFT-f95j316A/s595/bg%20copy.jpg');
+    background-color: #fff5c9;
+    background-image: url('bg-3b.jpg');
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 50px;
+    color: rgb(255, 255, 255);
   }
   .frame-4 .countdown, .frame-4 .event {
     background: white;
-    color: black;
+    color: rgb(17, 17, 17);
     padding: 20px;
     border-radius: 10px;
     margin: 10px 0;
@@ -104,7 +229,7 @@ body, html {
     justify-content: space-around;
     align-items: center;
     background: white;
-    color: black;
+    color: rgb(17, 17, 17);
     padding: 20px;
     border-radius: 10px;
     margin: 10px 0;
@@ -117,8 +242,9 @@ body, html {
   }
 
   .frame-5 {
-    background-color: #9adfec;
-    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiz-DbM-MmCete4d2zS7DLSQ97FoK7sRv8_ZTugLKvN6fdRmH1QUdj_0nj3ULRwPRUuNzY5ld29LQ9GnXNbiZkONfGT3-44hBsGjCp7fxUbUTlMGHzlnx9sjOM_6ZSWoJ_UCqKwYL2FEoEej6dqvS6-jufvsMvqy6Cw67LWjPQ2mvsRvcIGFT-f95j316A/s595/bg%20copy.jpg');
+    background-color: #fff5c9;
+    background-image: url('bg-3b.jpg');
+    color: rgb(255, 255, 255);
     padding: 50px;
   }
   .frame-5 .gallery {
@@ -135,14 +261,14 @@ body, html {
   }
   
   .frame-6 {
-    background-color: #9adfec;
-    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwqXh3RSdaMZyrcZHlXYOqvHNx49nLPKgT9wpzOv-Q_JoCs1ceJCJIKOrn5RXwY7AOKxUyv30bP0H7_expi4G5BjDclFupN4Hgfrtb3faPQtqz-b2ARW8Dqbjc-kehhINQXjlQGuqV_MLs0bSfhzeskkVAJ2Tffvsh09VDa0AWTHl-XPjrrUKfWmmFKco/s595/bg%20copy%202.jpg');
+    background-color: #fff5c9;
+    background-image: url('bg-1.jpg');
     color: rgb(255, 255, 255);
     padding: 50px;
   }
   .comment-section {
     margin-top: 20px;
-    color: black;
+    color: rgb(255, 255, 255);
   }
   .comment {
     background: white;
@@ -151,8 +277,9 @@ body, html {
     border-radius: 10px;
   }
   .frame-7 {
-    background-color: #9adfec;
-    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwqXh3RSdaMZyrcZHlXYOqvHNx49nLPKgT9wpzOv-Q_JoCs1ceJCJIKOrn5RXwY7AOKxUyv30bP0H7_expi4G5BjDclFupN4Hgfrtb3faPQtqz-b2ARW8Dqbjc-kehhINQXjlQGuqV_MLs0bSfhzeskkVAJ2Tffvsh09VDa0AWTHl-XPjrrUKfWmmFKco/s595/bg%20copy%202.jpg');
+    background-color: #fff5c9;
+    background-image: url('bg-3.jpg');
+    color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: center;
