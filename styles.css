@@ -271,7 +271,7 @@ body, html {
     color: rgb(255, 255, 255);
   }
   .comment {
-    background: white;
+    background: rgb(26, 26, 26);
     padding: 10px;
     margin: 10px 0;
     border-radius: 10px;
