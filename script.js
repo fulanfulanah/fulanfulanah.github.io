@@ -22,10 +22,10 @@
       const textSecond = Math.floor((gap % minute) / second);
   
       document.getElementById('countdown').innerHTML =
-        `<div>${textDay} <br/><p style="font-size:3vw";>Day</p></div>
-         <div>${textHour} <br/><p style="font-size:3vw";>Hour</p></div>
-         <div>${textMinute} <br/><p style="font-size:3vw";>Min</p></div>
-         <div>${textSecond} <br/><p style="font-size:3vw";>Sec</p></div>`;
+        `<div>${textDay} <br/><p style="font-size:10px";>Day</p></div>
+         <div>${textHour} <br/><p style="font-size:10px";>Hour</p></div>
+         <div>${textMinute} <br/><p style="font-size:10px";>Min</p></div>
+         <div>${textSecond} <br/><p style="font-size:10px";>Sec</p></div>`;
     }
   
     setInterval(countdown, 1000);
@@ -163,3 +163,5 @@ document.getElementById('open-music-btn').addEventListener('click', function() {
         const elements = document.querySelectorAll('.transisi');
         elements.forEach(el => observer.observe(el));
     });
+
+    
