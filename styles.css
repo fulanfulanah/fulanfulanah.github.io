@@ -1,9 +1,8 @@
 body, html {
     height: 100%;
     margin: 0;
-    font-family: 'Amita', sans-serif;
+    font-family: 'Roboto', sans-serif;
     overflow: hidden;
-    background-color: black;
   }
   
   .frame {
@@ -30,11 +29,10 @@ body, html {
   /* INI BAGIAN AWAL FRAME COVER */
 
   .frame-cover {
-    background-image: url('bg-foto1.jpg');;
+    background-image: url('1.jpg');;
     animation: zoomIn 2s ease-in-out forwards;
-    display: flex;
     flex-direction: column;
-    justify-content: center; /* Menempatkan gambar di tengah */
+    justify-content: space-between;
     text-align: center;
     padding: 5% 10%; /* Menggunakan persen untuk padding */
     height: 100vh; /* Pastikan frame memenuhi tinggi viewport */
@@ -42,10 +40,10 @@ body, html {
 
 @keyframes zoomIn {
   from {
-    background-size: 100vh;
+    background-size: 140vh;
   }
   to {
-    background-size: 110vh;
+    background-size: 100vh;
   }
 }
 
@@ -71,15 +69,21 @@ body, html {
 .frame-cover img {
     display: block; /* Pastikan gambar ditata dengan benar */
     margin: 20px auto; /* Memusatkan gambar */
-    max-width: 100%; /* Gambar responsif */
+    max-width: 250px; /* Gambar responsif */
     height: auto;
 }
 
-.frame-cover .tombolcover {
+.tombolcover {
     position: fixed;
-    bottom: 15%;
+    bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.dandiantara {
+  position: relative;
+  top: 180px;
+  bottom: 20%;
 }
 
 
@@ -121,11 +125,11 @@ body, html {
 
 /* Gaya tombol */
 .btn-dark {
-  background-color: rgb(32, 32, 32); /* Warna latar belakang tombol */
+  background-color: rgb(100, 14, 14); /* Warna latar belakang tombol */
   border: none; /* Menghapus border default */
   color: #fff; /* Warna teks tombol */
-  padding: 5px 20px; /* Padding tombol */
-  font-size: 16px; /* Ukuran font tombol */
+  padding: 8px 18px; /* Padding tombol */
+  font-size: 14px; /* Ukuran font tombol */
   border-radius: 5px; /* Sudut membulat tombol */
   cursor: pointer; /* Menampilkan kursor pointer saat hover */
   transition: background-color 0.3s ease; /* Transisi halus saat hover */
@@ -145,18 +149,19 @@ body, html {
   }
 
   .frame-1 {
-    background-image: url('https://media1.giphy.com/media/kA1AkP3cGS90I/200w.gif?cid=6c09b952qx2meu5elrr63ibreo1dq9tk6t7f9fdds8j3fqsy&ep=v1_gifs_search&rid=200w.gif&ct=g');
+    background-image: url('2.jpg');
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 50px;
+    padding: 50px;   
+    transform: translateY(100%);
   }
 
   .frame-1-image-container {
     background-color: #fff;
     border: 4px solid white;
-    border-radius: 100px 100px 0px 0px;
+    border-radius: 120px 120px 120px 120px;
     border-color: #fff;
     overflow: hidden;
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.2);
@@ -170,9 +175,16 @@ body, html {
     object-fit: cover;
   }
 
+  .show-frame1 .frame-cover {
+    transform: translateY(-100%);
+  }
+  .show-frame1 .frame-1 {
+    transform: translateY(0);
+  }
+
   .frame-2 {
     background-color: #fff5c9;
-    background-image: url('bg-2.jpg');
+    background-image: url('https://959fc8-d7.myshopify.com/cdn/shop/files/gps_generated_ff420d89-1ca6-4ca9-8396-a370d49ab8d3.png?v=1713565042&width=1445');
     color: rgb(255, 255, 255);
     font-size: 16px;
     display: flex;
@@ -189,7 +201,7 @@ body, html {
   }
   .frame-3 {
     background-color: #000000;
-    background-image: url('bg-3.jpg');
+    background-image: url('3.jpeg');
     display: flex;
     color: rgb(255, 255, 255);
     flex-direction: column;
@@ -199,16 +211,16 @@ body, html {
     padding: 50px;
   }
   .frame-3 img {
-    border-radius: 50%;
+    border-radius: 60px 60px 60px 60px;
     margin-top: 10px;
     margin-bottom: 10px;
-    border: 5px solid white;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 180px;
+    border: 2px solid white;
   }
   .frame-4 {
     background-color: #fff5c9;
-    background-image: url('bg-3b.jpg');
+    background-image: url('4a.jpg');
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -218,7 +230,7 @@ body, html {
     color: rgb(255, 255, 255);
   }
   .frame-4 .countdown, .frame-4 .event {
-    background: white;
+    background: rgba(255, 255, 255, 0.5);
     color: rgb(17, 17, 17);
     padding: 20px;
     border-radius: 10px;
@@ -228,7 +240,7 @@ body, html {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: white;
+    background: rgba(255, 255, 255, 0.5);
     color: rgb(17, 17, 17);
     padding: 20px;
     border-radius: 10px;
@@ -243,7 +255,7 @@ body, html {
 
   .frame-5 {
     background-color: #fff5c9;
-    background-image: url('bg-3b.jpg');
+    background-image: url('5a.jpg');
     color: rgb(255, 255, 255);
     padding: 50px;
   }
@@ -262,23 +274,23 @@ body, html {
   
   .frame-6 {
     background-color: #fff5c9;
-    background-image: url('bg-1.jpg');
+    background-image: url('6.jpg');
     color: rgb(255, 255, 255);
     padding: 50px;
   }
   .comment-section {
     margin-top: 20px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
   }
   .comment {
-    background: rgb(26, 26, 26);
+    background: rgb(255, 255, 255);
     padding: 10px;
     margin: 10px 0;
     border-radius: 10px;
   }
   .frame-7 {
     background-color: #fff5c9;
-    background-image: url('bg-3.jpg');
+    background-image: url('1.webp');
     color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
@@ -288,7 +300,7 @@ body, html {
     padding: 50px;
   }
   .gift-card {
-    background: rgba(255, 255, 255, 1);
+    background: rgba(255, 255, 255, 0.5);
     color: black;
     padding: 20px;
     border-radius: 10px;
@@ -342,6 +354,8 @@ button {
 .transisi {
   opacity: 0;
   transition: all 1s ease-in-out;
+  /* Menambahkan transisi untuk perubahan ukuran */
+  transform: scale(0.5); /* Gambar kecil pada awalnya */
 }
 
 .transisi-bawah {
@@ -360,6 +374,11 @@ button {
   transform: translateX(-10px);
 }
 
+.transisi-zoom-in {
+  opacity: 1; /* Opacity penuh pada akhir transisi */
+  transform: scale(1); /* Gambar besar pada akhir transisi */
+}
+
 .visible {
   opacity: 1 !important;
   transform: translate(0, 0) !important;
@@ -374,4 +393,5 @@ footer {
   font-size: 10px;
   justify-content: center;
   text-align: center;
+  text-decoration: none;
 }
