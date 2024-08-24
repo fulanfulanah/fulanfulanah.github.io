@@ -164,4 +164,16 @@ document.getElementById('open-music-btn').addEventListener('click', function() {
         elements.forEach(el => observer.observe(el));
     });
 
-    
+
+    function showFrame1() {
+    document.querySelector('.container').classList.add('show-frame1');
+  }
+
+
+  function besar() {
+    document.getElementById('gambar').classList.add('transisi-besar');
+}
+
+function kecil() {
+    document.getElementById('gambar').classList.remove('transisi-besar');
+}
